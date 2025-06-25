@@ -1,5 +1,3 @@
-// All about Objects in JavaScript
-
 // Creating an object using object literal syntax
 const person = {
     name: ["Bob", "Smith"],
