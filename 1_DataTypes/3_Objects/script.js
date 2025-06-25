@@ -110,8 +110,7 @@ let student = {
 console.log(student.details.age); // Output: 22
 
 // Object destructuring
-let { name, age } = person;
-console.log(name, age); // Output: Alice 31
+let {name, age} = {name: "John", age: 30};
 
 // Object destructuring with default values
 let { city = "Unknown" } = person;

@@ -78,6 +78,9 @@ do {
     i++;
 } while (i < numbers.length);
 
+// Array destructuring
+let [a, b] = [1, 2];
+
 // Mapping an array to create a new array
 let doubledArray = numbers.map((num) => num * 2);
 
