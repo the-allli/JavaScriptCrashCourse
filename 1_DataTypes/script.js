@@ -29,9 +29,10 @@ let tundefined;  // Undefined
 let tsymbol = Symbol("Hello");  // Symbol
 
 // Reference Types
-let tarray = [1, 2, 3, 4, 5];  // Array
-let tobject = { name: "John", age: 30 };  // Object
-
+// Array
+let tarray = [1, 2, 3, 4, 5];
 // Function
 // Internally, a function is a special kind of object with callable behavior.
 let tfunction = () => { console.log("Hello from function"); };
+// Object
+let tobject = { name: "John", age: 30 };  
