@@ -11,8 +11,7 @@ age = 31; // Allowed
 // Data Types
 /*
  * Primitive: Number (int, float, exponential), BigInt, Boolean, String, Null, Undefined, Symbol
- * Object/Reference: Array[], Object{}
- * Function: ()
+ * Non-Primitive (Object/Reference): Array[], Function(), Object{}
 */
 
 // Primitives
@@ -34,4 +33,5 @@ let tarray = [1, 2, 3, 4, 5];  // Array
 let tobject = { name: "John", age: 30 };  // Object
 
 // Function
+// Internally, a function is a special kind of object with callable behavior.
 let tfunction = () => { console.log("Hello from function"); };
