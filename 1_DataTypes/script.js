@@ -58,3 +58,8 @@ new Date(year, month, day, hours, minutes);
 new Date(year, month, day, hours, minutes, seconds);
 new Date(year, month, day, hours, minutes, seconds, ms);
 new Date(milliseconds);
+// Set
+const letters = new Set();
+letters.add("a");
+letters.add("b");
+letters.add("c");
