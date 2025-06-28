@@ -16,36 +16,36 @@ age = 31; // Allowed
 
 // Primitive Types
 // Integer
-let tint = 1;
+let tInt = 1;
 // Float
-let tfloat = 1.5;
+let tFloat = 1.5;
 // Exponential
-let texponential = 1e2;
-let texponential1 = 1e-2;
+let tExponential = 1e2;
+let tExponential1 = 1e-2;
 // BigInt
-let tbigint = BigInt(1212112324324798324234838324);
+let tBigint = BigInt(1212112324324798324234838324);
 // Boolean
-let tboolean = true;
+let tBoolean = true;
 // String
-let tstring = "Hello World"; // String (double quotes)
-let tstring1 = "Hello World"; // String (single quotes)
-let tstring2 = `Hello World`; // String (template literals)
+let tString = "Hello World"; // String (double quotes)
+let tString1 = "Hello World"; // String (single quotes)
+let tString2 = `Hello World`; // String (template literals)
 // Null
-let tnull = null;
+let tNull = null;
 // Undefined
-let tundefined = undefined;
+let tUndefined = undefined;
 // Symbol
-let tsymbol = Symbol("Hello");
+let tSymbol = Symbol("Hello");
 
 // Non-Primitive Types
 // Array
-let tarray = [1, 2, 3, 4, 5];
+let tArray = [1, 2, 3, 4, 5];
 // Function
-let tfunction = () => {
+function tFunnction() {
   console.log("Hello from function");
-};
+}
 // Object
-let tobject = { name: "John", age: 30 };
+let tObject = { name: "John", age: 30 };
 // Date
 const d = new Date();
 // There are 9 ways to create a new date object:
