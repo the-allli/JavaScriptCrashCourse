@@ -1,6 +1,12 @@
 /*
+Inheritance is a mechanism where a new class (or object) is created from an existing class (or object). 
+The new class (child/subclass) inherits properties and methods from the existing class (parent/superclass), 
+promoting code reusability.
+
 ES6 Classes provide a cleaner, more familiar syntax for creating objects and implementing inheritance, 
 but under the hood, they still rely on prototypal inheritance.
+a) Prototypal Inheritance (Traditional way)
+b) ES6 Classes (Syntactic Sugar over Prototypes)
 */
 
 // Parent Class
