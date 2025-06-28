@@ -1,5 +1,5 @@
 // Declaring & Initializing variables using var, let, and const
-var name = "John";
+var name = "John"; // don's use var
 let age = 30;
 const pi = 3.14;
 
@@ -41,35 +41,15 @@ let tSymbol = Symbol("Hello");
 // Array
 let tArray = [1, 2, 3, 4, 5];
 // Function
-function tFunnction() {
-  console.log("Hello from function");
-}
+function tFunnction() {}
 // Object
 let tObject = { name: "John", age: 30 };
-// Date
-const d = new Date();
-// There are 9 ways to create a new date object:
-new Date();
-new Date(date);
-new Date(year, month);
-new Date(year, month, day);
-new Date(year, month, day, hours);
-new Date(year, month, day, hours, minutes);
-new Date(year, month, day, hours, minutes, seconds);
-new Date(year, month, day, hours, minutes, seconds, ms);
-new Date(milliseconds);
 // Set
 const letters = new Set();
 letters.add("a");
 letters.add("b");
 letters.add("c");
 // Map
-// const fruits = new Map([
-//   ["apples", 500],
-//   ["bananas", 300],
-//   ["oranges", 200]
-// ]);
-// Create a Map
 const fruits = new Map();
 fruits.set("apples", 500);
 fruits.set("bananas", 300);
