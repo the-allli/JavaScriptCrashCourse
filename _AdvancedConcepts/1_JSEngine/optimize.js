@@ -53,15 +53,75 @@ obj2.x = 30;
 obj2.y = 100;
 
 // Inline-Caching
-// Use dynamic property access, Using bracket notation makes it harder for the engine to inline cache.
-// function findUser(user){
-//   return `found ${user.firstName} ${user.lastName}`
+// Use dynamic property access(.), Using bracket notation makes it harder for the engine to inline cache.
+// function findUser(user) {
+//   return `found ${user["firstName"]} ${user["lastName"]}`;
 // }
 function findUser(user) {
-  return `found ${user["firstName"]} ${user["lastName"]}`;
+  return `found ${user.firstName} ${user.lastName}`;
 }
 const userData = {
   firstName: "Ali",
   lastName: "Haider",
 };
 findUser(userData);
+
+// Eval
+// Executes arbitrary code (dangerous!), Prevents JS engines from optimizing, Security risk if userInput is untrusted
+// const userInput = "2 + 2";
+// const result = eval(userInput); // Executes string as code
+// console.log(result); // 4
+// Better Alternative (use Function, or parse safely)
+// Safe expression parser (limited to numbers and operators)
+function safeEvaluate(expression) {
+  if (/^[0-9+\-*/ ().]+$/.test(expression)) {
+    return Function(`"use strict"; return (${expression})`)();
+  } else {
+    throw new Error("Unsafe input!");
+  }
+}
+const userInput = "2 + 2";
+console.log(safeEvaluate(userInput)); // 4
+
+// Arguments
+// Not a real array, Confusing behavior in arrow functions or strict mode, Slower and de-optimizes functions
+// function sum() {
+//   let total = 0;
+//   for (let i = 0; i < arguments.length; i++) {
+//     total += arguments[i];
+//   }
+//   return total;
+// }
+// Better Alternative Rest Parameters
+function sum(...nums) {
+  return nums.reduce((total, num) => total + num, 0);
+}
+
+// for-in Loop
+// It iterates over all enumerable properties, including inherited ones. Order is not guaranteed.
+const obj = { a: 1, b: 2 };
+// for (let key in obj) {
+//   console.log(obj[key]); // use Object.keys or for-of
+// }
+for (const key of Object.keys(obj)) {
+  console.log(obj[key]);
+}
+
+// With
+// Makes variable resolution ambiguous, Disallowed in strict mode, Breaks optimization
+const person = {
+  name: "Ali",
+  age: 30,
+};
+// with (person) {
+//   console.log(name); // Looks like a global variable, but it's person.name
+// }
+// use object destructuring
+const { name } = person;
+console.log(name); // Ali
+
+// Delete
+// Breaks hidden class optimizations. Slows down object access.
+const user = { name: "Ali", age: 30 };
+// delete user.age; // de-optimizes
+user.age = undefined; // Keeps the shape intact
