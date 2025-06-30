@@ -24,9 +24,10 @@ JS-Engine
   Interpreter/Ignition => read the code, run the code(no compilation)
   Bytecode => interpreter produces bytecode (low-level code but not as low-level as machine-code)
   Profiler/Monitor => tells how we can optimize the code
-  JIT-Compiler/Turbo-Fan => read the code, understands it, convert the code into another language (machine-code), produces optimized code
+  Compiler/Turbo-Fan => read the code, understands it, convert the code into another language (machine-code), produces optimized code
   Optimized-Code => mixture of bytecode and machine-code (Don't use these things in your code [eval(), arguments, for-in loop, with, delete, hidden-classes, inline-caching])
 }
+// JIT-Compiler(Just InTime Compiler) => combination of interpreter and compiler
 // Single-Threaded => only 1 set of instruction is executed at a time (1 call-stack means single-threaded, Synchronous)
 // Javascript Runtime => for Asynchronous behaviour [Call-Stack, Memory-Heap, Web-API[DOM, fetch(), setTimeout()], Event-Loop, Job-Queue, Callback-Queue, Worker-Threads]
 // Node.js => Javascript Runtime
