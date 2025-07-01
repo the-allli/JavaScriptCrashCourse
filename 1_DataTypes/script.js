@@ -11,7 +11,7 @@ age = 31; // Allowed
 // Data-Types
 /*
  * Primitive: Number (int, float, exponential), BigInt, Boolean, String, Null, Undefined, Symbol
- * Non-Primitive (Object/Reference): Array[], Function(), Object{}
+ * Non-Primitive (Object/Reference): Array[], Function(), Object{}, set(), map(), etc
  */
 
 // Primitive Types
