@@ -10,8 +10,8 @@ age = 31; // Allowed
 
 // Data-Types
 /*
- * Primitive: Number (int, float, exponential), BigInt, Boolean, String, Null, Undefined, Symbol
- * Non-Primitive (Object/Reference): Array[], Function(), Object{}, set(), map(), etc
+ * Primitive: Number (Int, Float, Exponential, BigInt), Boolean, String, Null, Undefined, Symbol
+ * Non-Primitive (Object/Reference): Array[], Function(), Object{}, etc
  */
 
 // Primitive Types
@@ -44,13 +44,3 @@ let tArray = [1, 2, 3, 4, 5];
 function tFunnction() {}
 // Object
 let tObject = { name: "John", age: 30 };
-// Set
-const letters = new Set();
-letters.add("a");
-letters.add("b");
-letters.add("c");
-// Map
-const fruits = new Map();
-fruits.set("apples", 500);
-fruits.set("bananas", 300);
-fruits.set("oranges", 200);
